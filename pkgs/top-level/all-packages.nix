@@ -2902,6 +2902,8 @@ with pkgs;
 
   hebcal = callPackage ../tools/misc/hebcal {};
 
+  heroicgameslauncher = callPackage ../games/heroicgameslauncher { };
+
   hexio = callPackage ../development/tools/hexio { };
 
   hexyl = callPackage ../tools/misc/hexyl { };
