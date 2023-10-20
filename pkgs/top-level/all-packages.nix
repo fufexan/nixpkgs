@@ -11768,6 +11768,8 @@ with pkgs;
 
   overmind = callPackage ../applications/misc/overmind { };
 
+  overskride = callPackage ../tools/bluetooth/overskride { };
+
   oxker = callPackage ../applications/misc/oxker { };
 
   oxlint = callPackage ../development/tools/oxlint { };
