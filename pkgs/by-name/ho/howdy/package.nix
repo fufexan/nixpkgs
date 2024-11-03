@@ -83,6 +83,11 @@ stdenv.mkDerivation {
   patches = [
     # Don't install the config file. We handle it in the module.
     ./dont-install-config.patch
+
+    # Wait for the direct child process (auth client), and not ANY child
+    # process, which may allow authentication when it shouldn't
+    # https://github.com/boltgolt/howdy/issues/969
+    ./waitpid.patch
   ];
 
   mesonFlags = [
